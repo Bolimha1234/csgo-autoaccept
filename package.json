@@ -1,0 +1,19 @@
+{
+    "name": "csgo-autoaccept",
+    "version": "1.0.0",
+    "description": "Simple nodejs csgo match autoclicker.",
+    "main": "index.js",
+    "bin": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "build": "pkg index.js -t node14-win-x64"
+    },
+    "keywords": [],
+    "author": "Bolimha1234",
+    "license": "ISC",
+    "dependencies": {
+        "colors": "^1.4.0",
+        "robot-cmd": "^1.0.6",
+        "robotjs": "^0.6.0"
+    }
+}
