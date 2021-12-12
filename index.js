@@ -16,7 +16,8 @@ async function start() {
         console.log('Welcome to csgo-autoacceptor! Let me accept the match for you.'.green)
 
         function loop() {
-            robot.moveMouse(Number(config["x"]), Number(config["y"]));
+            robot.moveMouse(Number(config["x"]), Number(config["y"] - 200));
+            robot.moveMouseSmooth(Number(config["x"]), Number(config["y"]));
             robot.mouseClick();
             console.log('Moved & clicked!'.bgRed)
             setTimeout(loop, 3000)
